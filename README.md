@@ -1,11 +1,17 @@
 # SSIM
 This is an implementation of the algorithm for calculating the Structural SIMilarity (SSIM) index between two images.
 
-This is the IDL implementation by Dr. Christiaan Boersma (Christiaan.Boersma@nasa.gov) that has been ported from the Matlab version available at [www.cns.nyu.edu/~lcv/ssim/ssim_index.m](http://www.cns.nyu.edu/~lcv/ssim/ssim_index.m).
+This is the IDL implementation by Dr. Christiaan Boersma (Christiaan.Boersma@nasa.gov) that has been ported from the Matlab version available at [www.cns.nyu.edu/~lcv/ssim/ssim_index.m](http://www.cns.nyu.edu/~lcv/ssim/ssim_index.m) and used in the publication:
 
-Please refer to
+--- Boersma, C., Bregman, J., Allamandola, L.J., "The Charge State of Polycyclic Aromatic Hydrocarbons across a Reflection Nebula, an H ii Region, and a Planetary Nebula", 2018, ApJ, 858, 67 ---
 
---- Z. Wang, A. C. Bovik, H. R. Sheikh, and E. P. Simoncelli, "Image quality assessment: From error visibility to structural similarity," IEEE Transactios on Image Processing, vol. 13, no. 4, pp. 600-612, Apr. 2004 ---
+
+When using this code, please refer to:
+
+--- Wang, Z., Bovik, A.C., Sheikh, H.R., Simoncelli, E.P., "Image quality assessment: From error visibility to structural similarity", 2004, IEEE Transactios on Image Processing, 13, 600 ---
+
+Note that the scikit-image package offers a Python implementation of the SSIM algorithm in its metrics module ([skimage.metrics.structural_similarity](https://scikit-image.org/docs/stable/api/skimage.metrics.html#skimage.metrics.structural_similarity)).
+
 ## Inputs
 1. img1: the first image being compared.
 2. img2: the second image being compared.
